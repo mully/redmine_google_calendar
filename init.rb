@@ -39,7 +39,7 @@ Redmine::Plugin.register :redmine_google_calendar do
   end
 
   # A new item is added to the project menu
-  menu :project_menu, 'Calendar', :controller => 'google_calendar', :action => 'show'
+  menu :project_menu, :google_calendar, :controller => 'google_calendar', :action => 'show'
 end
 
 Rails::Plugin.class_eval do
